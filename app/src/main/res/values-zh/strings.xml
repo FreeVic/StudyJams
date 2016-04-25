@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">输入名字</string>
+    <string name="cream">奶油</string>
+    <string name="chocolate">巧克力</string>
+    <string name="toppings">配料</string>
+    <string name="quantity">数量</string>
+    <string name="orderSummary">订单详情</string>
+    <string name="order">提交</string>
+    <string name="javaName">名字:</string>
+    <string name="addCream">添加奶油?</string>
+    <string name="addChocolate">添加巧克力?</string>
+    <string name="javaQuantity">数量:</string>
+    <string name="total">总量:</string>
+    <string name="thank">感谢惠顾!</string>
+    <string name="coffeeOrder">咖啡订单</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="moreTip">100杯,已经点得够多了</string>
+    <string name="author">作者:Vic</string>
+    <string name="from">来自:SJ56 不忘初心方得始终</string>
+    <string name="pull">下拉有福利~</string>
+
+    <string name="titleBirthday">生日贺卡案例</string>
+    <string name="titleCounter">计分器案例</string>
+    <string name="titleOrder">咖啡点单机案例</string>
+    <string name="note1A">1A 简单View及入门</string>
+    <string name="note1B">1B ViewGroup布局入门及控件间距</string>
+    <string name="notePS1">PS1 生日贺卡实践</string>
+    <string name="note2A">2A 咖啡点单案例上</string>
+    <string name="note2B">2B 生日贺卡案例下</string>
+    <string name="notePS2">PS2 比分计数器案例</string>
+    <string name="note3A">OOP编程上</string>
+    <string name="note3B">OOP编程下</string>
+    <string name="extra">教你查看Android开发者文档</string>
+</resources>

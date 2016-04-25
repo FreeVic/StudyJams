@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/fab_margin">
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/fab_margin"
+              android:layout_marginTop="@dimen/fab_margin"
+    android:hint="@string/name"
+              android:id="@+id/et"
+    android:inputType="textCapWords"/>
+    <TextView
+        style="@style/TextStyle"
+        android:text="@string/toppings"
+        android:textColor="@color/black"
+    />
+    <CheckBox
+        android:id="@+id/check1"
+        android:paddingLeft="@dimen/fab_margin"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="@string/cream"/>
+    <CheckBox
+        android:id="@+id/check2"
+        android:paddingLeft="@dimen/fab_margin"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/chocolate"/>
+    <TextView
+        style="@style/TextStyle"
+        android:text="@string/quantity"
+        android:textColor="@color/black"
+    />
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <Button style="@style/TextStyle"
+                android:layout_width="50dp"
+                android:background="@color/comma"
+                android:onClick="increase"
+                android:text="+"
+                android:textColor="@color/white"
+
+        />
+        <TextView
+            android:id="@+id/tvQuantity"
+            style="@style/TextStyle"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+        />
+        <Button style="@style/TextStyle"
+                android:layout_width="50dp"
+                android:background="@color/comma"
+                android:onClick="decrease"
+                android:text="-"
+                android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextStyle"
+        android:text="@string/orderSummary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+    />
+    <TextView
+        android:id="@+id/tvPrice"
+        style="@style/TextStyle"
+        android:text="¥ 0"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+    />
+
+    <Button style="@style/TextStyle"
+            android:background="@color/comma" android:onClick="order"
+            android:text="@string/order"
+            android:textColor="@color/white"/>
+</LinearLayout>

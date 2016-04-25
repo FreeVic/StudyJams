@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg"
+                android:orientation="vertical"
+                android:id="@+id/root"
+>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:paddingLeft="@dimen/fab_margin25"
+                      android:paddingRight="@dimen/fab_margin25"
+                      android:orientation="vertical"
+        >
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/fab_margin"
+                      android:gravity="center"
+                      android:text="Team A"/>
+            <TextView android:id="@+id/aGrade" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/fab_margin25"
+                      android:layout_marginTop="@dimen/fab_margin25"
+                      android:gravity="center"
+                      android:text="0"
+                      android:textSize="65sp"/>
+            <Button android:id="@+id/a3Btn" style="@style/ButtonStyle"
+
+                    android:text="+3 POINTS"/>
+            <Button android:id="@+id/a2Btn" style="@style/ButtonStyle"
+                    android:text="+2 POINTS"/>
+            <Button android:id="@+id/a1Btn" style="@style/ButtonStyle"
+                    android:text="FREE THROW"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/fab_margin"
+              android:background="@android:color/darker_gray"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:paddingLeft="@dimen/fab_margin25"
+                      android:paddingRight="@dimen/fab_margin25"
+                      android:orientation="vertical"
+        >
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/fab_margin"
+                      android:gravity="center"
+                      android:text="Team B"/>
+            <TextView android:id="@+id/bGrade" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/fab_margin25"
+                      android:layout_marginTop="@dimen/fab_margin25"
+                      android:gravity="center"
+                      android:text="0"
+                      android:textSize="65sp"/>
+            <Button android:id="@+id/b3Btn" style="@style/ButtonStyle"
+
+                    android:text="+3 POINTS"/>
+            <Button android:id="@+id/b2Btn" style="@style/ButtonStyle"
+                    android:text="+2 POINTS"/>
+            <Button android:id="@+id/b1Btn" style="@style/ButtonStyle"
+                    android:text="FREE THROW"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button android:id="@+id/reset" style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:text="RESET"/>
+</RelativeLayout>
