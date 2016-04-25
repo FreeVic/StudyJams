@@ -1,10 +1,9 @@
-package com.example.hb;
+package cn.studyjams.s1.sj56.zhangshengli;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;

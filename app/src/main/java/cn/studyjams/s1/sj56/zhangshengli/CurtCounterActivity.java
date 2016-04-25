@@ -1,13 +1,10 @@
-package com.example.hb;
+package cn.studyjams.s1.sj56.zhangshengli;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import javax.xml.transform.Templates;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

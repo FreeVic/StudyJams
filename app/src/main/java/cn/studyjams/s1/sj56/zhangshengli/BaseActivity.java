@@ -1,9 +1,8 @@
-package com.example.hb;
+package cn.studyjams.s1.sj56.zhangshengli;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 
 /**
  * Created by Vic on 2016/4/25 0025.

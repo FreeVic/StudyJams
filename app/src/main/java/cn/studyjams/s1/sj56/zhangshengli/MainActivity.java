@@ -1,4 +1,4 @@
-package com.example.hb;
+package cn.studyjams.s1.sj56.zhangshengli;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,10 +8,7 @@ import android.os.Message;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
-import android.view.animation.OvershootInterpolator;
-import android.widget.Toast;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -34,7 +31,7 @@ public class MainActivity extends BaseActivity {
     private List<String> caseList = new ArrayList();
     private List<String> noteList = new ArrayList();
     private MyHandler mHandler;
-    private Class[] clazz = {HappyBirthdayActivity.class,CurtCounterActivity.class,OrderCoffeeActivity.class};
+    private Class[] clazz = {HappyBirthdayActivity.class,CurtCounterActivity.class, OrderCoffeeActivity.class};
     private String[] urls = {
             "http://www.studyjamscn.com/thread-3800-1-1.html",
             "http://www.studyjamscn.com/thread-5217-1-1.html",
@@ -98,7 +95,7 @@ public class MainActivity extends BaseActivity {
                 if(isCase){
                     intent = new Intent(MainActivity.this,clazz[position]);
                 }else{
-                    intent = new Intent(MainActivity.this,WebActivity.class);
+                    intent = new Intent(MainActivity.this, WebActivity.class);
                     intent.putExtra(AppConstant.INTENT_URL,urls[position]);
                 }
                 startActivity(intent);
