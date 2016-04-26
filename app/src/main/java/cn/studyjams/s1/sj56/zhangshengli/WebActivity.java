@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.dd.processbutton.iml.ActionProcessButton;
+import com.tencent.smtt.sdk.WebSettings;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

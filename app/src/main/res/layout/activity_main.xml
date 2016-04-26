@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.hb.MainActivity"
+    tools:context="cn.studyjams.s1.sj56.zhangshengli.MainActivity"
 android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
