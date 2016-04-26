@@ -1,5 +1,6 @@
 package cn.studyjams.s1.sj56.zhangshengli;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -14,6 +15,9 @@ import butterknife.OnClick;
  * Created by Vic on 2016/4/21 0021.
  */
 public class CurtCounterActivity extends BaseActivity implements View.OnClickListener{
+    private String STATE_A = "teamA";
+    private String STATE_B = "teamB";
+
 
     @Bind(R.id.aGrade)
     TextView aGrade;
@@ -40,6 +44,14 @@ public class CurtCounterActivity extends BaseActivity implements View.OnClickLis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
+        reload(savedInstanceState);
+    }
+
+    private void reload(Bundle state){
+        if(state==null)
+            return;
+        addA(state.getInt(STATE_A));
+        addB(state.getInt(STATE_B));
     }
 
     @Override
@@ -86,5 +98,12 @@ public class CurtCounterActivity extends BaseActivity implements View.OnClickLis
                 reset();
                 break;
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt(STATE_A,teamA);
+        outState.putInt(STATE_B,teamB);
+        super.onSaveInstanceState(outState);
     }
 }

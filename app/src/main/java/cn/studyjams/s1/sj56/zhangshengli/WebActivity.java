@@ -36,10 +36,12 @@ public class WebActivity extends BaseActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         progress.setMode(ActionProcessButton.Mode.ENDLESS);
         generator = new ProgressGenerator(progress);
-
         webView.setWebViewClient(client);
+        webView.getSettings().setJavaScriptEnabled(true);
         String url = getIntent().getStringExtra(AppConstant.INTENT_URL);
+//        url = "http://www.workec.com/html/form/Q0FyNWwlMkZOYlRjTSUzRA==.html?uid=2117808";
         webView.loadUrl(url);
+        System.out.println("hardware:"+webView.isHardwareAccelerated());
         loading();
     }
 

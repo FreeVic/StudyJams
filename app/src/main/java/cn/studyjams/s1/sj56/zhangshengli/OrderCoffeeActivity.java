@@ -19,7 +19,8 @@ import butterknife.ButterKnife;
  * Created by Vic on 2016/4/21 0021.
  */
 public class OrderCoffeeActivity extends BaseActivity {
-
+    private String STATE_QUANTITY = "quantity";
+    private String STATE_ORDER = "order";
     @Bind(R.id.et)
     EditText et;
     @Bind(R.id.check1)
@@ -39,8 +40,14 @@ public class OrderCoffeeActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
-        tvQuantity = (TextView) findViewById(R.id.tvQuantity);
-        tvPrice = (TextView) findViewById(R.id.tvPrice);
+        reload(savedInstanceState);
+    }
+
+    private void reload(Bundle state) {
+        if (state == null)
+            return;
+        tvQuantity.setText(String.valueOf(quantity = state.getInt(STATE_QUANTITY)));
+        tvPrice.setText(state.getString(STATE_ORDER));
     }
 
     @Override
@@ -97,4 +104,10 @@ public class OrderCoffeeActivity extends BaseActivity {
         }
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt(STATE_QUANTITY, quantity);
+        outState.putString(STATE_ORDER, tvPrice.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
 }

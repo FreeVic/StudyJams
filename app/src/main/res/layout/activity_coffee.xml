@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/bg"
+
               android:orientation="vertical"
               android:paddingLeft="@dimen/fab_margin">
+
     <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
     android:layout_marginRight="@dimen/fab_margin"
               android:layout_marginTop="@dimen/fab_margin"
@@ -79,3 +84,4 @@
             android:text="@string/order"
             android:textColor="@color/white"/>
 </LinearLayout>
+</ScrollView>
